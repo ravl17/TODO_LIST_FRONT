@@ -1,4 +1,5 @@
 import './Task.css'
+import * as Constants from './constants.js';
 import { useState } from 'react';
 export function Task({ task }) {
     const [isDone, setIsDone] = useState(task.is_done);
@@ -10,7 +11,7 @@ export function Task({ task }) {
         setIsDone(!isDone);
       
         // Call the server endpoint to update the is_done state
-        const apiUrl = `http://localhost:8080/api/tasks/is_done?taskId=${task.id}&is_done=${!isDone}`;
+        const apiUrl = Constants.API_ENDPOINT+`/tasks/is_done?taskId=${task.id}&is_done=${!isDone}`;
         const requestOptions = {
           method: 'POST',
           headers: {
