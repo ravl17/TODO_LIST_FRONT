@@ -1,0 +1,6 @@
+.day-container {
+    flex: 1; /* Distribute available space equally among days */
+    text-align: center; /* Center text within each day */
+    padding: 10px; /* Add padding as needed */
+    box-sizing: border-box; /* Include padding and border in total width and height */
+  }
