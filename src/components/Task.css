@@ -1,6 +1,7 @@
 .card_task{
         --border-radius: 0.75rem;
-        width: 210px;
+        /* width: 210px; */
+        /* width: 140px; */
         font-family: "Arial";
         padding: 1rem;
         cursor: pointer;

@@ -31,7 +31,7 @@ function getWeekTimestamps() {
     const dayTimestamps = [];
 
     for (let i = 0; i < 7; i++) {
-        const dayTimestamp = startOfWeekTimestamp + i * 24 * 60 * 60 * 1000;
+        const dayTimestamp = startOfWeekTimestamp + (i+1) * 24 * 60 * 60 * 1000;
         dayTimestamps.push(dayTimestamp);
     }
 
