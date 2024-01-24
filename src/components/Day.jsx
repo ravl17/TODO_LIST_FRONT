@@ -3,7 +3,8 @@ import './Day.css'
 import * as Constants from './constants.js';
 import React, { useState, useEffect } from 'react';
 import { Task } from './Task';
-function Day({dayOfWeek,timestamp}) {
+function Day({dayOfWeek,timestampDay}) {
+    const [timestamp,setTimestamp]=useState(timestampDay)
     const [tasks, setTasks] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 

@@ -1,8 +1,15 @@
 /* Week.css */
 .week-container {
-    display: flex;
+    display: grid;
     width: 100vw;
+    position: relative;
   }
-  
+.week-selector{
+  display: flex;
+  justify-content: center;
+}
+.week-days{
+  display: flex;
+}
   /* Add more styling if necessary */
   
