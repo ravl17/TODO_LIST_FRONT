@@ -11,7 +11,6 @@ function Week() {
     useEffect(() => {
         const newTimestampDayOfWeek = getWeekTimestamps(getStartOfWeekTimestamp(week));
         setTimestampDayOfWeek(newTimestampDayOfWeek);
-        console.log(newTimestampDayOfWeek);
     }, [week]); // Depend only on 'week' for this effect
 
 

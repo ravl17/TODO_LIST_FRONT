@@ -39,9 +39,9 @@ export function TaskForm() {
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
-    
-          const data = await response.json();
-          console.log('Data from backend:', data);
+          // TODO  CHECK THE RESPONSE SO IR NOT GIVES AN ERROR
+          // const data = await response.json();
+          // console.log('Data from backend:', data);
           // You can set the data to state or handle it as needed
           // setTasks(data) or perform other operations
         } catch (error) {
